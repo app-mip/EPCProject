@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
     <title>Mengalihkan ke EPC Inventory...</title>
-    <!-- Redirect otomatis dalam 0 detik -->
-    <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbwf6r1foJB3W10yLUniQp20pnU72Jgh6aaKbsP8ok7MG88sWxVaW_B6XNTb8oNKo36ElA/exec">
     <style>
-        body { display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; background-color: #f3f4f6; }
+        body { display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; background: #f3f4f6; color: #333; text-align: center; padding: 20px; }
+        /* Gaya untuk tombol cadangan */
+        a { margin-top: 15px; padding: 10px 20px; background-color: #007bff; color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 14px; transition: 0.2s; }
+        a:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
-    <p>Membuka Aplikasi Inventory...</p>
+    <p>EPC Project Loading...</p>
+    
+    <!-- 👇 GANTI LINK HANYA DI BAGIAN href="" DI BAWAH INI 👇 -->
+    <a id="link-tujuan" href="https://script.google.com/macros/s/AKfycbwH9md6h3Jt6fvlihLli8I7EbXckHS6dSJc5wzWVhP6c7o3pywmCE8TTry20glC8GJNNg/exec">
+        Klik di sini jika tidak dialihkan otomatis
+    </a>
+    <!-- 👆 ------------------------------------------------ 👆 -->
+
+    <script>
+        // Script ini akan mengambil link dari tombol di atas dan otomatis mengalihkan halaman
+        var tujuan = document.getElementById("link-tujuan").href;
+        window.location.replace(tujuan);
+    </script>
 </body>
 </html>
